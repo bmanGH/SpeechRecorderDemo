@@ -185,6 +185,8 @@
 }
 
 - (void) syncRefresh:(UIRefreshControl*)refreshControl {
+    [self.recordList removeAllObjects];
+    
     NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                                    NSUserDomainMask, YES)
                                lastObject];
